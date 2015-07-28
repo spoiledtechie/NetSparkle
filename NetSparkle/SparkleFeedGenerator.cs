@@ -179,7 +179,7 @@ namespace AppLimit.NetSparkle
                 writer.WriteElementString("title", title);
                 writer.WriteElementString("link", link);
                 writer.WriteRaw("");
-                writer.WriteElementString("sparkle", "releaseNotesLink", _docs, _docs);
+                writer.WriteElementString("sparkle", "releaseNotesLink", _docs, releaseNotesUrl);
 
                 if (pubDate != null && pubDate != DateTime.MinValue && pubDate != DateTime.MaxValue)
                     writer.WriteElementString("pubDate", pubDate.ToString("r"));
