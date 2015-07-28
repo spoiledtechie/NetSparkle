@@ -1,7 +1,7 @@
 ﻿using System;
-using NLog;
 using System.Drawing;
 using System.Windows.Forms;
+using log4net;
 
 namespace AppLimit.NetSparkle
 {
@@ -10,7 +10,7 @@ namespace AppLimit.NetSparkle
     /// </summary>
     internal class NetSparkleDiagnostic
     {
-        private static readonly Logger logger = LogManager.GetCurrentClassLogger();
+        private static readonly ILog logger = LogManager.GetLogger("logger");
         private readonly bool _isDiagnosticWindowShown;
         private readonly NetSparkleMainWindows _diagnosticWindow;
 
