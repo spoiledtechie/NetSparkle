@@ -160,6 +160,8 @@ namespace AppLimit.NetSparkle
         {
             if (this.IsDownloadDSAValid)
             {
+                lblSecurityHint.Visible =false;
+                BackColor = Color.FromArgb(240, 240, 240);
                 return;
             }
             Size = new Size(Size.Width, 137);
